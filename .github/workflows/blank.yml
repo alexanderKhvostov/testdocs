@@ -24,7 +24,7 @@ jobs:
     steps:
       # Runs a single command using the runners shell
       - name: Calcilate docs reading time
-        uses: alexanderKhvostov/test-action-reaing-time@v0.22
+        uses: alexanderKhvostov/test-action-reaing-time@v0.23
 
       # Runs a set of commands using the runners shell
       - uses: actions/checkout@v2
