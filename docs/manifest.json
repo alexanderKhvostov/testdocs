@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "heading": true,
+      "title": "Test Documentation",
+      "routes": [
+        {
+          "title": "Opstrace Introduction",
+          "path": "/docs/README.md"
+        },
+        {
+          "title": "Opstrace Quick Start",
+          "path": "/docs/quickstart.md"
+        },
+        {
+          "heading": true,
+          "title": "User Guide",
+          "routes": [
+            {
+              "title": "Configuring Alertmanager",
+              "path": "/docs/guides/user/configuring-alerts.md"
+            },
+            {
+              "title": "Sending Metrics with Prometheus",
+              "path": "/docs/guides/user/sending-metrics-with-prometheus.md"
+            }
+          ]
+        },
+        {
+          "heading": true,
+          "title": "Administrator Guide",
+          "routes": [
+            {
+              "title": "Managing Tenants",
+              "path": "/docs/guides/administrator/managing-tenants.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": true,
+      "title": "References",
+      "routes": [
+        {
+          "title": "Frequently Asked Questions",
+          "path": "/docs/references/faq.md"
+        }
+      ]
+    }
+  ]
+}
