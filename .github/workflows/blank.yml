@@ -23,8 +23,16 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Runs a single command using the runners shell
-      - name: Calcilate docs reading time
-        uses: alexanderKhvostov/test-action-reaing-time@v0.24
+      # checkout the private repo containing the action to run
+      - name: Checkout GitHub Action Repo
+        uses: actions/checkout@v2
+        with:
+          repository: zentered/reading-time-to-manifest
+          ref: v0.1.2
+          token: ${{ secrets.GITHUB_TOKEN }} # stored in GitHub secrets
+          path: .github/actions/action
+      - name: Run My Action
+        uses: ./.github/actions/action
 
       # Runs a set of commands using the runners shell
       - uses: actions/checkout@v2
